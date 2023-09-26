@@ -21,7 +21,12 @@ const routes = [
         component: () => import("../views/MealsBy/MealsByLetter.vue"),
       },
       {
-        path: "/by-ingredient/:ingredient?",
+        path: "/ingredients",
+        name: "ingredients",
+        component: () => import("../views/Ingredients.vue"),
+      },
+      {
+        path: "/by-ingredient/:ingredient",
         name: "byIngredient",
         component: () => import("../views/MealsBy/MealsByIngredient.vue"),
       },
@@ -35,13 +40,6 @@ const routes = [
   {
     path: "/guest",
     component: () => import("../components/GuestLayout.vue"),
-    // children: [
-    //   {
-    //     path: "/by-name/:name?",
-    //     name: "byName",
-    //     component: () => import("../views/MealsBy/MealsByName.vue"),
-    //   },
-    // ],
   },
 ];
 

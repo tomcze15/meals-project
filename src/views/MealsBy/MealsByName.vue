@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="p-8 pb-0">
+    <div class="p-8 pb-8">
       <input
         type="text"
         class="rounded border-2 border-gray-200 w-full"
@@ -11,9 +11,7 @@
         v-model="keyword"
       />
     </div>
-    <div class="grid grid-cols-1 gap-5 p-8 md:grid-cols-3">
-      <MealItem v-for="meal in meals" :meal="meal" :key="meal.idMeal" />
-    </div>
+    <Meals :meals="meals" />
   </div>
 </template>
 
@@ -21,14 +19,18 @@
 import { computed, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import store from "../../store";
-import MealItem from "../../components/MealItem.vue";
+import Meals from "../../components/Meals.vue";
 
 const route = useRoute();
 const keyword = ref("");
 const meals = computed(() => store.state.searchedMeals);
 
 function searchMeals() {
-  store.dispatch("searchMeals", keyword.value);
+  if (keyword.value) {
+    store.dispatch("searchMeals", keyword.value);
+  } else {
+    store.commit("setSearchedMeals", []);
+  }
 }
 
 onMounted(() => {

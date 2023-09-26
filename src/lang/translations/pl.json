@@ -1,14 +1,18 @@
 {
   "Search for Meals": "Szukaj posiłków",
   "Home": "Strona główna",
-  "Search Meal": "Search Meal",
-  "Meals By Ingredient": "Meals By Ingredient",
-  "Meals By Name": "Meals By Name",
-  "Meals By Letter": "Meals By Letter",
-  "Category": "Category",
-  "Area": "Area",
-  "Go to YouTube": "Go to YouTube",
-  "Ingredients": "Ingredients",
-  "Measures": "Measures",
-  "View Original Source": "View Original Source"
+  "Search Meal": "Szukaj posiłek",
+  "Meals By Ingredient": "Posiłki według składnika",
+  "Meals By Name": "Posiłki według nazwy",
+  "Meals By Letter": "Posiłki według litery",
+  "Category": "Kategoria",
+  "Area": "Teren",
+  "Go to YouTube": "Zobacz na YouTube",
+  "Ingredients": "Składniki",
+  "Measures": "Miary",
+  "View Original Source": "Zobacz oryginalne źródło",
+  "Random Meals": "Wylosowane posiłki",
+  "There are no meals": "Brak posiłków",
+  "Meals for": "Posiłki dla",
+  "Search for Ingredients": "Szukaj po składnikach"
 }
